@@ -1,0 +1,98 @@
+.page-header {
+    border-bottom: 2px solid var(--stroke-header);
+}
+
+.headerbox,
+.main-nav {
+    display: flex;
+    align-items: center;
+    vertical-align: baseline;
+}
+
+.site-nav,
+.header-contacts {
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+
+    list-style: none;
+
+    display: flex;
+
+}
+
+.site-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-contacts {
+    margin-left: auto;
+}
+
+.header-contacts-item+.header-contacts-item {
+    margin-left: 50px;
+}
+
+.site-nav-item>.link {
+    color: var(--secondary-txt-col);
+    text-decoration: none;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color 250ms var(--cubic);
+}
+
+.header-contacts-item>.link {
+    color: var(--primary-txt-col);
+    text-decoration: none;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color 250ms var(--cubic);
+}
+
+.site-nav-item .link:hover,
+.site-nav-item .link:focus,
+.header-contacts-item>.link:hover,
+.header-contacts-item>.link:focus {
+    color: var(--accent-col);
+}
+
+.link.current {
+    color: var(--accent-col);
+
+}
+
+.link {
+    position: relative;
+}
+
+.link.current::after {
+    position: absolute;
+    content: "";
+    display: block;
+
+    bottom: 0;
+
+    background-color: var(--accent-col);
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+}
+
+.iconheader {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--primary-txt-col);
+    display: block;
+}
+
+.link:hover .email,
+.link:hover .phone,
+.link:focus .email,
+.link:focus .phone {
+    fill: var(--accent-col);
+}
