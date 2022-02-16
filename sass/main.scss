@@ -1,18 +1,22 @@
+
 @import "../sass/base/normalize";
 @import "../sass/utils/vars";
-
 @import "../sass/base/common";
+
+
+
 @import "../sass/utils/hidden";
+@import "../sass/components/modal";
+@import "../sass/components/section";
 @import "../sass/components/container";
+
 
 @import "../sass/layout/logotype";
 @import "../sass/layout/header";
+@import "../sass/components/placeholder";
 @import "../sass/layout/hero";
-@import "../sass/components/modal";
-
 @import "../sass/components/btn";
-
-@import "../sass/components/section";
+@import "../sass/components/modal";
 
 @import "../sass/layout/features";
 @import "../sass/layout/whatwedo";
@@ -23,4 +27,5 @@
 
 @import "../sass/layout/portfolio";
 @import "../sass/layout/examplelist";
+
 
