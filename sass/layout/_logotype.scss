@@ -2,27 +2,32 @@
     font-family: raleway;
     font-size: 26px;
     font-weight: 700;
-    color: var(--secondary-txt-col);
+    color: var(--accent-col);
     text-decoration: none;
-    line-height: 1.17;
+    line-height: 1.17; 
+}
 
+.header__logo{
     margin-right: 93px;
 }
 
-.logoblue {
-    color: var(--accent-col);
+.logo--black {
+    color: var(--secondary-txt-col);
 }
+
 
 // logo footer
 
-.logowhite {
+.logo--white {
     font-family: raleway;
     font-size: 26px;
     font-weight: 700;
     color: var(--white-txt-col);
     text-decoration: none;
     line-height: 1.17;
+}
 
+.footer__logo {
     margin-bottom: 20px;
     display: block;
 }

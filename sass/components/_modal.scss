@@ -37,6 +37,29 @@
 }
 
 
+.button-modal {
+
+    display: block;
+
+    border-style: none;
+    background-color: var(--white-txt-col);
+
+    padding: 0;
+
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+
+}
+
 .modal-close {
     fill: black;
     width: 11px;
@@ -46,7 +69,9 @@
 
 }
 
-
+.button-modal:focus .modal-close {
+    fill: var(--accent-col);
+}
 
 /* ФОРМА МОДАЛКА */
 .hero-form-heading {
@@ -55,7 +80,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: calc(23 / 20);
-    text-align: center;
+    
     letter-spacing: 0.03em;
 
     color: var(--secondary-txt-col);
@@ -146,6 +171,20 @@ input {
     margin-bottom: 4px;
 }
 
+.checkbox {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+
+
+}
 
 .checkbox-label {
     display: flex;
@@ -180,4 +219,31 @@ input {
 }
 
 
+.button.form {
+    display: block;
+    border-style: none;
+    border-color: none;
+    cursor: pointer;
 
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    background-color: var(--accent-col);
+}

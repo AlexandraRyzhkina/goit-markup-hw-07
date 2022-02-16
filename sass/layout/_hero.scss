@@ -11,7 +11,7 @@
     padding-bottom: 200px;
 }
 
-.hero-title {
+.hero__title {
     font-weight: 900;
     font-size: 44px;
     color: var(--white-txt-col);
@@ -21,5 +21,19 @@
     letter-spacing: 0.06em;
 
     margin: 0 auto 28px auto;
+}
+
+.hero__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    background-color: var(--accent-col);
+    color: var(--white-txt-col);
+
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+    text-align: center;
 }
 

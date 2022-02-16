@@ -1,15 +1,15 @@
-.page-header {
+.header {
     border-bottom: 2px solid var(--stroke-header);
 }
 
-.headerbox,
-.main-nav {
+.header__content,
+.header__nav {
     display: flex;
     align-items: center;
     vertical-align: baseline;
 }
 
-.site-nav,
+.nav-list,
 .header-contacts {
     line-height: 1.17;
     letter-spacing: 0.02em;
@@ -21,19 +21,11 @@
 
 }
 
-.site-nav-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.header-contacts {
-    margin-left: auto;
-}
-
-.header-contacts-item+.header-contacts-item {
-    margin-left: 50px;
-}
-
-.site-nav-item>.link {
+.nav-list__link {
     color: var(--secondary-txt-col);
     text-decoration: none;
     display: flex;
@@ -41,9 +33,45 @@
     padding-bottom: 32px;
 
     transition: color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-col);
+    }
+
+    &--current {
+        color: var(--accent-col);
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+
+            bottom: 0;
+
+            background-color: var(--accent-col);
+            border-radius: 2px;
+            width: 100%;
+            height: 4px;
+
+        }
+    }
 }
 
-.header-contacts-item>.link {
+
+
+.header-contacts {
+    margin-left: auto;
+}
+
+.header-contacts__item+.header-contacts__item {
+    margin-left: 50px;
+}
+
+
+
+.header-contacts__link {
     color: var(--primary-txt-col);
     text-decoration: none;
     display: flex;
@@ -51,48 +79,27 @@
     padding-bottom: 32px;
 
     transition: color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-col);
+    }
+
+    &:hover .header-contact__icon,
+    &:focus .header-contact__icon {
+        fill: var(--accent-col);
+    }
+
 }
 
-.site-nav-item .link:hover,
-.site-nav-item .link:focus,
-.header-contacts-item>.link:hover,
-.header-contacts-item>.link:focus {
-    color: var(--accent-col);
-}
 
-.link.current {
-    color: var(--accent-col);
 
-}
-
-.link {
-    position: relative;
-}
-
-.link.current::after {
-    position: absolute;
-    content: "";
-    display: block;
-
-    bottom: 0;
-
-    background-color: var(--accent-col);
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-}
-
-.iconheader {
+.header-contact__icon {
     width: 16px;
     height: 16px;
     margin-right: 10px;
     fill: var(--primary-txt-col);
     display: block;
-}
 
-.link:hover .email,
-.link:hover .phone,
-.link:focus .email,
-.link:focus .phone {
-    fill: var(--accent-col);
+    
 }
