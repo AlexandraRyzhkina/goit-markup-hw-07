@@ -37,7 +37,8 @@
 }
 
 
-.modal__btn{
+.button-modal {
+
     display: block;
 
     border-style: none;
@@ -57,7 +58,6 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50px;
 
-
 }
 
 .modal-close {
@@ -69,7 +69,7 @@
 
 }
 
-.modal__btn:focus .modal-close {
+.button-modal:focus .modal-close {
     fill: var(--accent-col);
 }
 
@@ -80,7 +80,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: calc(23 / 20);
-
+    text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--secondary-txt-col);
