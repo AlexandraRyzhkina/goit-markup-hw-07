@@ -85,13 +85,8 @@
         color: var(--accent-col);
     }
 
-    &:hover .header-contact__icon,
-    &:focus .header-contact__icon {
-        fill: var(--accent-col);
-    }
 
 }
-
 
 
 .header-contact__icon {
@@ -101,5 +96,11 @@
     fill: var(--primary-txt-col);
     display: block;
 
-    
+    .header-contacts__link:hover &,
+    .header-contacts__link:focus & {
+        fill: var(--accent-col);
+
+    }
+
+
 }

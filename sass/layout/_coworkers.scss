@@ -1,21 +1,20 @@
-.section-cow {
+.coworkers {
     background-color: var(--secondary-bg-col);
-    padding-bottom: 94px;
-    padding-top: 94px;
 }
 
-.section-title {
-    font-weight: 700;
-    font-size: 36px;
+.coworkers__list {
+    list-style: none;
     line-height: 1.17;
-    color: var(--secondary-txt-col);
-    text-align: center;
-    letter-spacing: 0.03em;
 
-    margin-bottom: 50px;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--gap));
 }
 
-.coworkers-list-item {
+.coworkers__item {
 
     flex-basis: calc(100% / 4 - var(--gap));
     margin-left: var(--gap);
@@ -30,7 +29,7 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.coworkers-list .title {
+.coworkers__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
@@ -39,19 +38,8 @@
     margin-bottom: 10px;
 }
 
-.coworkers-list {
-    list-style: none;
-    line-height: 1.17;
 
-    padding: 0;
-    margin: 0;
-
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * var(--gap));
-}
-
-.coworkers-list-content {
+.coworkers__content {
     padding-top: 30px;
     padding-bottom: 30px;
 }

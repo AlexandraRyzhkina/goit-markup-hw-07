@@ -4,19 +4,27 @@
     padding-bottom: 60px;
 }
 
-.footer-all {
+.footer {
     display: flex;
     flex-wrap: wrap;
 }
 
 
 
-.address-cont {
+.footer-address__contacts {
     list-style: none;
     line-height: 1.7;
+
+    &__link {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+        display: block;
+        margin-bottom: 9px;
+        font-style: normal;
+    }
 }
 
-.address .link-address {
+.footer-address__link {
     text-decoration: none;
     color: var(--white-txt-col);
     font-style: normal;
@@ -25,28 +33,6 @@
     display: block;
     margin-bottom: 9px;
 }
-
-.address-cont .link-mail,
-.address-cont .link-call {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-    display: block;
-    margin-bottom: 9px;
-    font-style: normal;
-
-}
-
-
-
-.footer-heading {
-
-    text-transform: uppercase;
-    color: var(--white-txt-col);
-    font-size: 14px;
-    line-height: 1.14;
-    padding-bottom: 20px;
-}
-
 
 
 /* ФОРМА ПОДПИСАТЬСЯ ФУТЕР */
@@ -57,8 +43,7 @@
 
 }
 
-
-.footer-signup {
+.footer-form__signup {
     width: 358px;
     height: 50px;
 
@@ -71,3 +56,37 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.footer-form__button {
+    position: relative;
+
+    width: 200px;
+    height: 50px;
+    padding: 10px 53px 10px 29px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    margin-left: 10px;
+
+    color: #FFFFFF;
+    background-color: var(--accent-col);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+
+        fill: white;
+
+        background-image: url(../images/send.svg);
+    }
+
+}
+
