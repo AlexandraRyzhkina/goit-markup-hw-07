@@ -425,8 +425,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 28px;
   position: relative;
+  margin-bottom: 28px;
 }
 
 .form__input {
@@ -463,21 +463,6 @@ img {
   fill: var(--accent-col);
 }
 
-.form__input,
-.form__text {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px;
-  -webkit-transition: border 250ms var(--cubic);
-  transition: border 250ms var(--cubic);
-}
-
-.dogovor {
-  color: var(--accent-col);
-  text-decoration: underline;
-}
-
 .form__text {
   padding: 11px;
   resize: none;
@@ -487,6 +472,21 @@ img {
 .form__text:focus {
   outline: none;
   border: 1px solid var(--accent-col);
+}
+
+.dogovor {
+  color: var(--accent-col);
+  text-decoration: underline;
+}
+
+.checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
 }
 
 .checkbox {
@@ -502,16 +502,6 @@ img {
           clip-path: inset(50%);
   margin: -1px;
   padding: 11px 11px 11px 11px;
-}
-
-.checkbox-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 30px;
 }
 
 .icon-modalcheck {
@@ -838,8 +828,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 28px;
   position: relative;
+  margin-bottom: 28px;
 }
 
 .form__input {
@@ -876,21 +866,6 @@ img {
   fill: var(--accent-col);
 }
 
-.form__input,
-.form__text {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px;
-  -webkit-transition: border 250ms var(--cubic);
-  transition: border 250ms var(--cubic);
-}
-
-.dogovor {
-  color: var(--accent-col);
-  text-decoration: underline;
-}
-
 .form__text {
   padding: 11px;
   resize: none;
@@ -900,6 +875,21 @@ img {
 .form__text:focus {
   outline: none;
   border: 1px solid var(--accent-col);
+}
+
+.dogovor {
+  color: var(--accent-col);
+  text-decoration: underline;
+}
+
+.checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
 }
 
 .checkbox {
@@ -915,16 +905,6 @@ img {
           clip-path: inset(50%);
   margin: -1px;
   padding: 11px 11px 11px 11px;
-}
-
-.checkbox-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 30px;
 }
 
 .icon-modalcheck {
@@ -965,6 +945,15 @@ img {
   letter-spacing: 0.06em;
   color: #FFFFFF;
   background-color: var(--accent-col);
+}
+
+.form__input, .form__text {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-transition: border 250ms var(--cubic);
+  transition: border 250ms var(--cubic);
 }
 
 .features {
