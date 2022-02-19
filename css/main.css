@@ -372,7 +372,7 @@ img {
   transition: transform 250ms var(--cubic), -webkit-transform 250ms var(--cubic);
 }
 
-.button-modal {
+.modal-button {
   display: block;
   border-style: none;
   background-color: var(--white-txt-col);
@@ -388,20 +388,26 @@ img {
   border-radius: 50px;
 }
 
-.modal-close {
+.modal-button_icon {
   fill: black;
   width: 11px;
   height: 11px;
   -webkit-transition: fill 250ms var(--cubic);
   transition: fill 250ms var(--cubic);
 }
-
-.button-modal:focus .modal-close {
+.modal-button:focus .modal-button_icon {
   fill: var(--accent-col);
 }
 
 /* ФОРМА МОДАЛКА */
-.hero-form-heading {
+.form {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+.form__heading {
   margin-bottom: 34px;
   font-weight: 700;
   font-size: 20px;
@@ -411,14 +417,7 @@ img {
   color: var(--secondary-txt-col);
 }
 
-.form {
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-}
-
-.form-field {
+.form__field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,14 +429,24 @@ img {
   position: relative;
 }
 
-.form-label {
+.form__input {
+  margin: 0;
+  padding: 11px 11px 11px 45px;
+}
+.form__input:focus {
+  outline: none;
+  border: 1px solid var(--accent-col);
+}
+
+.form__label {
   font-size: 12px;
   position: absolute;
   left: 0;
   top: -20px;
+  margin-bottom: 4px;
 }
 
-.icon-modal {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -450,19 +459,12 @@ img {
   -webkit-transition: fill 250ms var(--cubic);
   transition: fill 250ms var(--cubic);
 }
-
-.form-input:focus ~ .icon-modal {
+.form__input:focus ~ .form__icon {
   fill: var(--accent-col);
 }
 
-.form-input:focus {
-  outline: none;
-  border: 1px solid var(--accent-col);
-}
-
-.form-field input,
-.form-field textarea {
-  margin: 0;
+.form__input,
+.form__text {
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -476,19 +478,15 @@ img {
   text-decoration: underline;
 }
 
-textarea {
+.form__text {
   padding: 11px;
   resize: none;
   height: 120px;
   margin-bottom: 20px;
 }
-
-input {
-  padding: 11px 11px 11px 45px;
-}
-
-.form-field label {
-  margin-bottom: 4px;
+.form__text:focus {
+  outline: none;
+  border: 1px solid var(--accent-col);
 }
 
 .checkbox {
@@ -503,6 +501,7 @@ input {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
+  padding: 11px 11px 11px 11px;
 }
 
 .checkbox-label {
@@ -786,7 +785,7 @@ input {
   transition: transform 250ms var(--cubic), -webkit-transform 250ms var(--cubic);
 }
 
-.button-modal {
+.modal-button {
   display: block;
   border-style: none;
   background-color: var(--white-txt-col);
@@ -802,20 +801,26 @@ input {
   border-radius: 50px;
 }
 
-.modal-close {
+.modal-button_icon {
   fill: black;
   width: 11px;
   height: 11px;
   -webkit-transition: fill 250ms var(--cubic);
   transition: fill 250ms var(--cubic);
 }
-
-.button-modal:focus .modal-close {
+.modal-button:focus .modal-button_icon {
   fill: var(--accent-col);
 }
 
 /* ФОРМА МОДАЛКА */
-.hero-form-heading {
+.form {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+.form__heading {
   margin-bottom: 34px;
   font-weight: 700;
   font-size: 20px;
@@ -825,14 +830,7 @@ input {
   color: var(--secondary-txt-col);
 }
 
-.form {
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-}
-
-.form-field {
+.form__field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -844,14 +842,24 @@ input {
   position: relative;
 }
 
-.form-label {
+.form__input {
+  margin: 0;
+  padding: 11px 11px 11px 45px;
+}
+.form__input:focus {
+  outline: none;
+  border: 1px solid var(--accent-col);
+}
+
+.form__label {
   font-size: 12px;
   position: absolute;
   left: 0;
   top: -20px;
+  margin-bottom: 4px;
 }
 
-.icon-modal {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -864,19 +872,12 @@ input {
   -webkit-transition: fill 250ms var(--cubic);
   transition: fill 250ms var(--cubic);
 }
-
-.form-input:focus ~ .icon-modal {
+.form__input:focus ~ .form__icon {
   fill: var(--accent-col);
 }
 
-.form-input:focus {
-  outline: none;
-  border: 1px solid var(--accent-col);
-}
-
-.form-field input,
-.form-field textarea {
-  margin: 0;
+.form__input,
+.form__text {
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -890,19 +891,15 @@ input {
   text-decoration: underline;
 }
 
-textarea {
+.form__text {
   padding: 11px;
   resize: none;
   height: 120px;
   margin-bottom: 20px;
 }
-
-input {
-  padding: 11px 11px 11px 45px;
-}
-
-.form-field label {
-  margin-bottom: 4px;
+.form__text:focus {
+  outline: none;
+  border: 1px solid var(--accent-col);
 }
 
 .checkbox {
@@ -917,6 +914,7 @@ input {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
+  padding: 11px 11px 11px 11px;
 }
 
 .checkbox-label {

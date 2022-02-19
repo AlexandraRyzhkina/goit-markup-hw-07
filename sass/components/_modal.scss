@@ -37,7 +37,7 @@
 }
 
 
-.button-modal {
+.modal-button {
 
     display: block;
 
@@ -60,21 +60,29 @@
 
 }
 
-.modal-close {
+.modal-button_icon {
     fill: black;
     width: 11px;
     height: 11px;
 
     transition: fill 250ms var(--cubic);
 
-}
+    .modal-button:focus & {
+        fill: var(--accent-col);
+    }
 
-.button-modal:focus .modal-close {
-    fill: var(--accent-col);
 }
 
 /* ФОРМА МОДАЛКА */
-.hero-form-heading {
+
+.form {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.form__heading {
     margin-bottom: 34px;
 
     font-weight: 700;
@@ -87,30 +95,39 @@
 
 }
 
-.form {
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-}
-
-.form-field {
+.form__field {
     display: flex;
     flex-direction: column;
-    margin-bottom: 28px;
 
     position: relative;
+
+    margin-bottom: 28px;
+
 }
 
-.form-label {
+.form__input {
+    @extend %formborderstyle;
+
+    margin: 0;
+    padding: 11px 11px 11px 45px;
+
+    &:focus {
+        outline: none;
+        border: 1px solid var(--accent-col);
+    }
+
+}
+
+.form__label {
     font-size: 12px;
     position: absolute;
     left: 0;
     top: -20px;
+    margin-bottom: 4px;
 
 }
 
-.icon-modal {
+.form__icon {
     position: absolute;
     top: 50%;
     left: 15px;
@@ -125,28 +142,24 @@
 
     transition: fill 250ms var(--cubic);
 
+    .form__input:focus~& {
+        fill: var(--accent-col);
+    }
+
 }
 
-.form-input:focus~.icon-modal {
-    fill: var(--accent-col);
-}
+.form__text {
+    @extend %formborderstyle;
+    padding: 11px;
+    resize: none;
+    height: 120px;
 
-.form-input:focus {
-    outline: none;
-    border: 1px solid var(--accent-col);
-}
+    margin-bottom: 20px;
 
-
-.form-field input,
-.form-field textarea {
-    margin: 0;
-
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-
-    transition: border 250ms var(--cubic);
-
+    &:focus {
+        outline: none;
+        border: 1px solid var(--accent-col);
+    }
 }
 
 .dogovor {
@@ -154,21 +167,11 @@
     text-decoration: underline;
 }
 
-textarea {
-    padding: 11px;
-    resize: none;
-    height: 120px;
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 
-    margin-bottom: 20px;
-}
-
-
-input {
-    padding: 11px 11px 11px 45px;
-}
-
-.form-field label {
-    margin-bottom: 4px;
 }
 
 .checkbox {
@@ -182,16 +185,11 @@ input {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-
-
-}
-
-.checkbox-label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+    padding: 11px 11px 11px 11px;
 
 }
+
+
 
 .icon-modalcheck {
     display: inline-block;

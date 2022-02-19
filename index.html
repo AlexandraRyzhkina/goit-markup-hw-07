@@ -70,50 +70,47 @@
 
         <div data-modal class="backdrop is-hidden">
             <div class="modal">
-                <button class="button-modal" data-modal-close type="button"> <svg class="modal-close">
+                <button class="modal-button" data-modal-close type="button"> <svg class="modal-button_icon">
                         <use href="images/sprite.svg#modalclose"></use>
                     </svg></button>
 
                 <form class="form">
-                    <h2 class="hero-form-heading">Оставьте свои данные, мы вам перезвоним</h2>
-                    <div class="form-field">
+                    <h2 class="form__heading">Оставьте свои данные, мы вам перезвоним</h2>
+                    <div class="form__field">
 
-                        <input class="form-input" type="text" name="name" id="name" autofocus>
-                        <label class="form-label" for="name">Имя</label>
-                        <svg class="icon-modal">
+                        <input class="form__input" type="text" name="name" id="name" autofocus>
+                        <label class="form__label" for="name">Имя</label>
+                        <svg class="form__icon">
                             <use href="images/sprite.svg#modalman"></use>
                         </svg>
                     </div>
 
 
-                    <div class="form-field">
-                        <input class="form-input" type="tel" name="tel" id="tel">
-                        <label class="form-label" for="tel">Телефон</label>
-                        <svg class="icon-modal">
+                    <div class="form__field">
+                        <input class="form__input" type="tel" name="tel" id="tel">
+                        <label class="form__label" for="tel">Телефон</label>
+                        <svg class="form__icon">
                             <use href="./images/sprite.svg#modalphone"></use>
                         </svg>
                     </div>
 
-                    <div class="form-field">
-                        <input class="form-input" type="mail" name="mail" id="mail">
-                        <label class="form-label" for="mail">Почта</label>
-                        <svg class="icon-modal">
+                    <div class="form__field">
+                        <input class="form__input" type="mail" name="mail" id="mail">
+                        <label class="form__label" for="mail">Почта</label>
+                        <svg class="form__icon">
                             <use href="./images/sprite.svg#modalmail"></use>
                         </svg>
                     </div>
 
-                    <div class="form-field">
+                    <div class="form__field">
 
-                        <textarea class="form-input placeholder" name="comment" id="comment" rows="5" cols="30"
+                        <textarea class="form__text" name="comment" id="comment" rows="5" cols="30"
                             placeholder="Введите текст"></textarea>
-                        <label class="form-label" for="comment">Комментарий</label>
+                        <label class="form__label" for="comment">Комментарий</label>
                     </div>
 
-
-
-
                     <label class="checkbox-label">
-                        <input class="checkbox" type="checkbox" name="agreement">
+                        <input class="form__input checkbox" type="checkbox" name="agreement">
                         <svg class="icon-modalcheck">
                             <use href="./images/sprite.svg#modalcheck"></use>
                         </svg>Соглашаюсь с рассылкой и
