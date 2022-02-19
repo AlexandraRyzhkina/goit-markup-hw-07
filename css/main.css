@@ -467,19 +467,13 @@ img {
   padding: 11px;
   resize: none;
   height: 120px;
-  margin-bottom: 20px;
 }
 .form__text:focus {
   outline: none;
   border: 1px solid var(--accent-col);
 }
 
-.dogovor {
-  color: var(--accent-col);
-  text-decoration: underline;
-}
-
-.checkbox-label {
+.checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,7 +483,7 @@ img {
   margin-bottom: 30px;
 }
 
-.checkbox {
+.checkbox__input {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -504,7 +498,7 @@ img {
   padding: 11px 11px 11px 11px;
 }
 
-.icon-modalcheck {
+.checkbox__icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -517,17 +511,18 @@ img {
   -webkit-transition: background-color 250ms var(--cubic);
   transition: background-color 250ms var(--cubic);
 }
-
-.checkbox:checked:focus ~ .icon-modalcheck {
+.checkbox__input:checked:focus ~ .checkbox__icon {
   background-color: var(--accent-col);
   border-color: var(--accent-col);
 }
 
-.button.form {
+.checkbox__agreement {
+  color: var(--accent-col);
+  text-decoration: underline;
+}
+
+.form-button {
   display: block;
-  border-style: none;
-  border-color: none;
-  cursor: pointer;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -535,11 +530,9 @@ img {
   padding-bottom: 10px;
   margin-right: auto;
   margin-left: auto;
-  font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
   color: #FFFFFF;
   background-color: var(--accent-col);
 }
@@ -870,19 +863,13 @@ img {
   padding: 11px;
   resize: none;
   height: 120px;
-  margin-bottom: 20px;
 }
 .form__text:focus {
   outline: none;
   border: 1px solid var(--accent-col);
 }
 
-.dogovor {
-  color: var(--accent-col);
-  text-decoration: underline;
-}
-
-.checkbox-label {
+.checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -892,7 +879,7 @@ img {
   margin-bottom: 30px;
 }
 
-.checkbox {
+.checkbox__input {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -907,7 +894,7 @@ img {
   padding: 11px 11px 11px 11px;
 }
 
-.icon-modalcheck {
+.checkbox__icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -920,17 +907,18 @@ img {
   -webkit-transition: background-color 250ms var(--cubic);
   transition: background-color 250ms var(--cubic);
 }
-
-.checkbox:checked:focus ~ .icon-modalcheck {
+.checkbox__input:checked:focus ~ .checkbox__icon {
   background-color: var(--accent-col);
   border-color: var(--accent-col);
 }
 
-.button.form {
+.checkbox__agreement {
+  color: var(--accent-col);
+  text-decoration: underline;
+}
+
+.form-button {
   display: block;
-  border-style: none;
-  border-color: none;
-  cursor: pointer;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -938,11 +926,9 @@ img {
   padding-bottom: 10px;
   margin-right: auto;
   margin-left: auto;
-  font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
   color: #FFFFFF;
   background-color: var(--accent-col);
 }

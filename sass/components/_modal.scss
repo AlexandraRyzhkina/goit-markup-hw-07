@@ -154,27 +154,22 @@
     resize: none;
     height: 120px;
 
-    margin-bottom: 20px;
-
     &:focus {
         outline: none;
         border: 1px solid var(--accent-col);
     }
 }
 
-.dogovor {
-    color: var(--accent-col);
-    text-decoration: underline;
-}
 
-.checkbox-label {
+
+.checkbox {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
 
 }
 
-.checkbox {
+.checkbox__input {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -191,7 +186,7 @@
 
 
 
-.icon-modalcheck {
+.checkbox__icon {
     display: inline-block;
     width: 16px;
     height: 15px;
@@ -207,22 +202,21 @@
 
     transition: background-color 250ms var(--cubic);
 
+    .checkbox__input:checked:focus~& {
+        background-color: var(--accent-col);
+        border-color: var(--accent-col);
+    }
+
 }
 
-
-.checkbox:checked:focus~.icon-modalcheck {
-
-    background-color: var(--accent-col);
-    border-color: var(--accent-col);
+.checkbox__agreement {
+    color: var(--accent-col);
+    text-decoration: underline;
 }
 
-
-.button.form {
+.form-button {
     display: block;
-    border-style: none;
-    border-color: none;
-    cursor: pointer;
-
+    
     width: 200px;
     height: 50px;
     border-radius: 4px;
@@ -233,14 +227,9 @@
     margin-right: auto;
     margin-left: auto;
 
-
-    font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
-
-
-    letter-spacing: 0.06em;
 
     color: #FFFFFF;
     background-color: var(--accent-col);
